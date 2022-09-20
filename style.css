@@ -1,4 +1,15 @@
+h1 {color: white}
+a {color: yellow}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
 .box {
-    width: 500px;
-    margin: 100px;
+    width: max-content;
+    margin: 50%;
+    margin-top: 50%;
 }
