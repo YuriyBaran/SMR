@@ -4,12 +4,8 @@ a {color: yellow}
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    
-}
-
-.box {
-    width: max-content;
+    background-color: black;
     margin: 50%;
     margin-top: 50%;
 }
+
