@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practica 2.4: Imagenes, texto y anclas</title>
+        <link rel="stylesheet" href="style.css" >
+    </head>
+    <body style="background-color: white;color:black;font-family: 'Times New Roman';">
+        <h1 style="text-align: center;"><u>Esta p&aacute;gina muestra las diferentes posibilidades de alineación de personajes de Valorant con el texto</u></h1>
+        <img src="tierra.jpg" width="100" height="100" align="right">
+        <p style="text-align: center"><a href="">Ir a top</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Ir a middle</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="">Ir a bottom</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="">Ir a left</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="">Ir a right</a></p>
+        <hr style="border-width:1;border-color: black;">
+
+        <h2>Imagen alineada verticalmente con align="top"</h2>
+        
+        <p> <img align="top" width="150" height="100" src="chamber.jpg"> El francés Chamber vive su vida en busca de un objetivo necesario, dispuesto a sacrificar todo lo que se interponga en su camino para lograrlo. Ha pasado gran parte de su tiempo involucrado en el combate y las armas, habiendo trabajado para el ejército francés antes de convertirse en tirador de PMC y luego en diseñador de armas para Kingdom Defense. Sin embargo, su empleo en Kingdom fue solo un trampolín para él, ya que en este punto ya estaba en su camino en busca de su verdad sagrada. </p>
+        <hr style="border-width:1;border-color: black;">
+        <p> <img align="middle" width="150" height="100" src="fade.jpg"> Hazal Eyletmez, una Radiant de Turquía, busca a una persona importante para ella después de que "se lo quitaron". Usando su habilidad para ver visiones de pesadilla, sus interpretaciones inicialmente la llevaron a sospechar que él había sido secuestrado por una organización secreta que descubrió que era el Protocolo VALORANT . Eyletmez decidió ponerse en contacto con el Protocolo bajo una marca anónima, amenazando con exponer a la organización si se enteraba de que eran los responsables del secuestro. Cuando parecía que solo tenían interés en localizarla en lugar de tomarla en serio, se puso en contacto personalmente con cada agente con un expediente sobre ellos para mostrar cuánto sabía sobre la gente de VALORANT y qué podía exponer al público si no tenían interés. en probar su inocencia.  </p>
+        <hr style="border-width:1;border-color: black;">
+        <p> <img align="bottom" width="150" height="100" src="neon.jpg"> Criada en Manila, Filipinas, Tala Nicole Dimaapi Valdez es una Radiante empoderada por su bioelectricidad que se ha entrelazado con la red de radianita de la Tierra . Una joven pero ex veterana en K/SEC, fue reclutada por el Protocolo VALORANT como parte de su Proyecto Omega, específicamente para utilizar sus habilidades eléctricas mientras intentaban impulsar un teletransportador Alpha-Omega. Al aceptar un puesto allí como su decimonoveno agente, "Neon", Valdez dejó su hogar para unirse al Protocolo y ahora busca ayudar a establecer una conexión estable que finalmente le permitirá al VP cruzar a Omega Earth. </p>
+        <hr style="border-width:1;border-color: black;">
+        <p> <img align="left" width="150" height="100" src="phoenix.png"> Jamie Adeyemi es un Radiant proveniente del distrito de Peckham en Londres, Inglaterra. Al crecer, Adeyemi asistió a una escuela de artes escénicas en el área, pero luego fue suspendida. Reclutado en el Protocolo VALORANT como su noveno agente , "Phoenix", Adeyemi estuvo muy involucrado en las actividades del Protocolo desde el 10 AFL en adelante. Con mucha información que se le ocultó y que necesitaba saber como un recluta reciente, no pudo evitar la detonación de un pico en Venecia mientras estaba en una misión en solitario. Phoenix tuvo otra oportunidad de detener uno al día siguiente cuando ocurrió otro ataque en Rabat , y fue aquí donde se encontró cara a cara por primera vez con el único perpetrador, su propia contraparte Omega .. Frustrado por lo mucho que se mantenía en la oscuridad, a pesar de que esta vez evitó la detonación con la ayuda de un equipo, Phoenix finalmente se enteró de la amenaza que representaba Omega Earth. </p>
+        <p>&nbsp</p>
+        <hr style="border-width:1;border-color: black;">
+        <p> <img align="right" width="150" height="100" src="jet.png"> Sunwoo Han proviene de Corea del Sur, con posibles vínculos con el barrio de Insa-dong en Seúl. Como chef en sus primeros años de vida, estuvo involucrada en un incidente relacionado con sus poderes radiantes similares al viento en el restaurante en el que trabajaba, lo que provocó una "tormenta anormal" que casi destruyó el edificio. Sunwoo huyó de la escena poco después. </p>
+</html>
