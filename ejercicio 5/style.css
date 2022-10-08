@@ -17,17 +17,17 @@ body{
     100% {top: 360px}
   }
 
-  @keyframes resaltarT {
+@keyframes resaltarT {
     0%   {top: 160}
     50% {top: 140px}
     100% {top: 160px}
   }
 
-  @keyframes resaltarB {
+@keyframes resaltarB {
     0%   {top: 580}
     50% {top: 560px}
-    100% {top: 580px}
-  }
+    100% {top: 580px} 
+  } 
 
 .bMID{
     position: fixed;
@@ -46,7 +46,6 @@ body{
     animation-iteration-count: infinite;
     cursor: pointer;
 }
-
 .bTOP{
     position: fixed;
     height: 40px;
@@ -80,4 +79,52 @@ body{
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
     cursor: pointer;
+}
+.bNO{
+    position: fixed;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-image: url(icono_posicion.png);
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+}
+
+#p1{
+    left: 970px;
+    top: 520px;
+}
+#p2{
+    left: 800px;
+    top: 290px;
+}
+#p3{
+    left: 1120px;
+    top: 480px;
+}
+#p4{
+    left: 770px;
+    top: 355px;
+}
+
+#p5{
+    left: 930px;
+    top: 245px;
+}
+#p6{
+    left: 1130px;
+    top: 400px;
+}
+
+#p7{
+    left: 1230px;
+    top: 150px;
+}
+
+#p8{
+    left: 650px;
+    top: 600px;
 }
