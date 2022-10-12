@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    z-index: 2;
+    position:relative;
+  }
+  td, th {
+    /* border: 1px solid #dddddd; */
+    padding: 8px;
+    text-align: center;
+    color: black;
+    background-color: transparent;
+  }
+  .titulo{
+    text-align: left;
+  }
+.boton{
+  width: 130px;
+  height: 30px;
+  z-index: 2;
+  position: relative;
+}
+
+.borde{
+  border-style: solid;
+  border: solid 4px #555555;
+  position: absolute;
+  left: 580px;
+  top: 160px;
+  border-radius: 5%;
+  z-index: 1;
+}
+
+body{
+  background-image: url(fondo.jpg);
+}
+
+th{
+  color: white;
+}
+
+.logo{
+  position: absolute;
+  width: 300px;
+  top: 20px;
+  left: 0px;
+}
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #1b1b1b;
+}
+
+.bloquetxt{
+  border: solid 2px #555555;
+  background-color: #000000;
+  color: white;
+  height: 20px;
+}
+
+.bloquetick{
+  accent-color: #555555;                   /*    No se cambiar el fondo de la checkbox sin marcar */
+  color: #555555;
+}
+
+.bloqueselect{
+  background-color: #000000;
+  color: white;
+  border: solid 2px #555555;
+}
+#borrar{
+  background-color: #555555;
+  color: rgb(19, 18, 18);
+}
+#enviar{
+  background-color: #ff9000;
+  color: black;
+}
