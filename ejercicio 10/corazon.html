@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>3D</title>
+        <script>src="botones.js"</script>
+        <script src="libreria_aframe.js"></script>
+    </head>
+    <body style="background-color: black;width: 750;height: 400;">
+        <a-scene>
+            <a-sky color="black"></a-sky>
+            <a-assets>
+                <a-asset-item id="modelo" src="corazon.gltf"></a-asset-item>
+              </a-assets>
+              <a-entity id="canvas" gltf-model="#modelo" color="white" scale="0.1 0.1 0.1" position="0 2 -4"></a-entity>
+          </a-scene>
+    </body>
+</html>
