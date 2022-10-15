@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <script src="libreria_aframe.js"></script>
+    <script src="eventos.js"></script>
+
+  </head>
+  <body>
+    <a-scene>
+        <a-sky id="cielo" color="black"></a-sky>
+        <a-plane position="0 1 0" rotation="-90 0 0" width="8" height="8" color="white"></a-plane>
+        <a-entity camera look-controls wasd-controls="acceleration: 5" position="0 1.5 4"></a-entity> <!--*/position="0 4 3"-->
+        <a-entity id="foco" light="color: white; intensity: 0.0; type: point;distance: 1.5" position="0 2 -1.5 "></a-entity> <!-- FOCO -->
+
+        <a-entity id="entorno" light="color: white; intensity: 0.01; type: directional;distance: 1.5" position="0 5 0 "></a-entity> <!-- CIELO -->
+    </a-scene>
+  </body>
+</html>
