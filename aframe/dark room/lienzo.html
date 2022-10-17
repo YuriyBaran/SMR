@@ -1,10 +1,16 @@
 <html>
   <head>
-    <script src="libreria_aframe.js"></script>
+    <script src="../libreria_aframe.js"></script>
     <script src="eventos.js"></script>
   </head>
   <body>
     <a-scene>
+      <a-assets>
+        <audio id="bg_music" src="sonidos/viento.mp3" preload="auto"></audio>
+        <audio id="pasos1" src="sonidos/pasos1.mp3" preload="auto"></audio>
+        <audio id="pasos2" src="sonidos/pasos2.mp3" preload="auto"></audio>
+        <audio id="pasos3" src="sonidos/pasos3.mp3" preload="auto"></audio>
+      </a-assets>
         <!-- CIELO -->
         <a-sky id="cielo" color="black"></a-sky>
 
@@ -21,7 +27,7 @@
         <a-entity id="entorno" light="color: white; intensity: 0.02; type: ambient" position="0 5 4 "></a-entity> 
 
         <!-- SONIDO_FOCO -->
-        <a-sound id="sonido_foco" src="foco.mp3" position="0 2 -1.5"></a-sound> 
+        <a-sound id="sonido_foco" src="sonidos/foco.mp3" position="0 2 -1.5"></a-sound> 
 
         <!-- CAJA -->
         <a-box src="suelo.png" depth="0.5" height="0.5" width="0.5" position="0 1 -1.5"></a-box>
@@ -30,8 +36,10 @@
         <!-- <a-text value="avanza hacia delante" color="red" position="0 1.5 3.5" width="1" align="center"></a-text> -->
 
         <!-- SONIDO_VIENTO -->
-        <audio id="bg_music" src="viento.mp3" preload="auto"></audio>
-        <a-entity sound="src:#bg_music; autoplay:true; loop:true; volume:0.5"></a-entity> 
+        <a-entity sound="src:#bg_music; autoplay:true; loop:true; volume:0.5"></a-entity>
+
+        <!-- SONIDO_PASOS -->   
+        <a-sound id="pasos" src="#"></a-sound>
     </a-scene>
   </body>
 </html>
