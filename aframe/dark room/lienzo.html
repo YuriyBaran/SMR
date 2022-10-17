@@ -2,7 +2,6 @@
   <head>
     <script src="libreria_aframe.js"></script>
     <script src="eventos.js"></script>
-
   </head>
   <body>
     <a-scene>
@@ -13,13 +12,13 @@
         <a-plane position="0 1 0" rotation="-90 0 0" width="30" height="30w" color="white"></a-plane>
 
         <!-- CAMARA -->
-        <a-entity camera look-controls wasd-controls="acceleration: 5" position="0 1.5 4"></a-entity> 
-
+        <a-entity camera look-controls="pointerLockEnabled: true" wasd-controls="acceleration: 5" position="0 1.5 4"></a-entity> 
+        
         <!-- FOCO -->
         <a-entity id="foco" light="color: red; intensity: 0.0; type: point;distance: 1.5" position="0 2 -1.5 "></a-entity> 
 
         <!-- LUZ CIELO  intensity: 0.01-->
-        <a-entity id="entorno" light="color: white; intensity: 0.01; type: directional" position="0 5 4 "></a-entity> 
+        <a-entity id="entorno" light="color: white; intensity: 0.02; type: ambient" position="0 5 4 "></a-entity> 
 
         <!-- SONIDO_FOCO -->
         <a-sound id="sonido_foco" src="foco.mp3" position="0 2 -1.5"></a-sound> 
@@ -29,6 +28,10 @@
 
         <!-- MSG avanza -->
         <!-- <a-text value="avanza hacia delante" color="red" position="0 1.5 3.5" width="1" align="center"></a-text> -->
+
+        <!-- SONIDO_VIENTO -->
+        <audio id="bg_music" src="viento.mp3" preload="auto"></audio>
+        <a-entity sound="src:#bg_music; autoplay:true; loop:true; volume:0.5"></a-entity> 
     </a-scene>
   </body>
 </html>
