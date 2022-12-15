@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <script src="../aframe.min.js"></script>
+    <script src="../aframe-extras.min.js"></script>
+    <script src="../aframe-physics-system.min.js"></script>
+    <script src="eventos.js"></script>
+  </head>
+  <body>
+    <a-scene physics="debug: true; restitution: 0;">
+      <a-assets timeout="5000">
+      </a-assets> 
+        <!-- CIELO -->
+        <a-sky id="cielo" color="white"></a-sky>
+
+        <!-- SUELO -->
+        <!-- <a-plane position="0 1 0" rotation="-90 0 0" width="3" height="10" color="white" material="src:#suelo" ></a-plane> -->
+        <a-entity geometry="primitive: plane; height: 10; width: 3" rotation="-90 0 0" material="color: black; opacity: 0.7; side: double;" position="0 1 0" static-body></a-entity>
+
+        <!-- CAMARA -->
+        <!-- <a-entity camera look-controls="pointerLockEnabled: true" wasd-controls="acceleration: 5" position="0 1.5 5"></a-entity>  -->
+        <a-entity id="rig" movement-controls kinematic-body jump-ability>
+          <a-entity camera look-controls="pointerLockEnabled: true;" position="0 1 0"></a-entity>
+        </a-entity>
+        </a-scene>
