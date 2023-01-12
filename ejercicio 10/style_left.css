@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 300px;
+    background-color: black;
+    color: white;
+}
+.titulo{
+    font-weight: bold;
+    font-family: 'Times New Roman';
+    text-align: center;
+    font-size: 26px;
+}
+.lista{
+    color: white;
+    text-align: left;
+    font-size: 25px;
+    margin-left: 80px;
+    list-style: none;
+}
+.boton{
+    width: 130px;
+    height: 30px;
+    z-index: 2;
+    position: relative;
+    background-color: #ff9000;
+    color: black;
+  }

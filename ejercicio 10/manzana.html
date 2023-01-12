@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>3D</title>
+        <script>src="botones.js"</script>
+        <script src="libreria_aframe.js"></script>
+    </head>
+    <body style="background-color: black;width: 750;height: 400;">
+        <a-scene>
+            <a-entity camera look-controls wasd-controls="acceleration: 30" position="0 2 2"></a-entity>
+            <a-sky color="black"></a-sky>
+            <a-assets>
+                <a-asset-item id="modelo" src="manzana.gltf"></a-asset-item>
+              </a-assets>
+              <a-entity id="canvas" gltf-model="#modelo" color="white" scale="0.1 0.1 0.1" position="0 0 -4" rotation=" -90 180 90"></a-entity>
+          </a-scene>
+    </body>
+</html>
