@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>verificacion</title>
+    </head>
+    <body>
+        <p class="header"><img class="logo" src="Logo.png"></p>
+        <center><h1 style="color:#ff9000">Usted se ha registrado correctamente</h1></center>
+        <center><h2 style="color:#ff9000">compruebe su informacion:</h2></center>
+        <div style="position:relative;top: 50px;text-align: left;left: 900px;color: white;font-size: 20px;" id="results"></div>
+        <script>
+        const resultlist = document.getElementById("results")
+        new URLSearchParams(window.location.search).forEach((value,name) => {
+            resultlist.append(`${name}: ${value}`)
+            resultlist.append(document.createElement("br"))
+        })
+         </script>
+    </body>
+</html>
+
+<?php
+ 
+        $servername = "servidorpowerbi2.database.windows.net";
+        $username = "administrador";
+        $password = "Rarara0001.";
+        $dbname = "database_name";
+        
+        // Create connection
+        $conn = sqlsrv_connect($servername,
+        $username, $password, $dbname);
+         
+        // Check connection
+        if($conn === false){
+            die("ERROR: Could not connect. "
+                . mysqli_connect_error());
+        }
+         
+        // Taking all 5 values from the form data(input)
+        $Usuario =  $_GET['_user'];
+        $Contraseña = $_GET['_pass'];
+
+         
+        // Performing insert query execution
+        // here our table name is college
+        $sql = "INSERT INTO dbo.UsuariosSMR  VALUES ('$Usuario',
+            '$Contraseña')";
+         
+        if(mysqli_query($conn, $sql)){
+            echo "<h3>data stored in a database successfully."
+                . " Please browse your localhost php my admin"
+                . " to view the updated data</h3>";
+ 
+            echo nl2br("\n$Usuario\n $Contraseña\n ");
+        } else{
+            echo "ERROR: Hush! Sorry $sql. "
+                . mysqli_error($conn);
+        }
+         
+        // Close connection
+        mysqli_close($conn);
+        ?>

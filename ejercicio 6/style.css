@@ -1,0 +1,32 @@
+*{
+    margin-left: 13%;
+    margin-top: 0px;
+    padding: 0;
+}
+
+body{
+    background-image: url(fond_lejos.jpg);
+    background-position: -250px;
+}
+
+p{
+    line-height: 120%;
+    font-size: 140%;
+}
+ol{
+    line-height: 140%;
+}
+
+li{
+    font-weight: bold;
+}
+#li2{
+    font-weight: normal;
+}
+.borde{
+    border-style: solid;
+    border-radius: 100px;
+    padding: 50px;
+    margin-right: 500px;
+    background-color: grey;
+}

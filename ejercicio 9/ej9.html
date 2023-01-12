@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inicio</title>
+    </head>
+    <body>
+        <form action="verificacion.html" method="GET">
+            <p class="header"><img class="logo" src="Logo.png" alt=""></p>
+            <center>
+                <table style="margin-top:5%">
+                    <tr>
+                        <th colspan="5" class="titulo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Suscribcion a:</th>
+                    </tr>
+                    <tr>
+                        <th><p align="right">Nombre:</p></th>
+                        <th><p align="left"><input maxlength="18" name="nombre" id="nombre" class="bloquetxt" type="text"></p></th>
+                    </tr>
+                    <tr>
+                        <th><p align="right">Apellidos:</p></th>
+                        <th><p align="left"><input maxlength="48" name="apellidos" id="apellidos" type="text" class="bloquetxt"></p></th>
+                    </tr>
+                    <tr>
+                        <th><p align="right">Direccion:</p></th>
+                        <th><p align="left"><input maxlength="48" name="direccion" id="direccion" type="text" class="bloquetxt"></p></th>
+                    </tr>
+                    <th><p align="right">Correo electronico:</p></th>
+                    <th><p align="left"><input name="correo" id="correo" type="text" class="bloquetxt"></p></th>
+                    <tr>
+                        <th><p align="right">Loin y contraseña:</p></th>
+                        <th><p align="left"><input maxlength="8" name="Usuario" id="login" type="text" class="bloquetxt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" maxlength="8" name="contraseña" id="contraseña" class="bloquetxt"></p></th>
+                    </tr>
+                    <tr>
+                        <th><p align="right">Sexo:</p>
+                        <th><p align="left" >Hombre <input name="hombre" id="hombre" class="bloquetick" type="checkbox">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mujer <input name="mujer" id="mujer" class="bloquetick" type="checkbox"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Poco <input name="poco"id="poco" class="bloquetick" type="checkbox"></th>
+                    </tr>
+                    <tr>
+                        <th><p align="right">Tipo de suscripción:</p></th>
+                    </tr>
+                    <tr>
+                        <th><p align="right">Basica <input name="basica" id="basica" class="bloquetick" type="checkbox"></p></th>
+                        <th><p align="left">Premium <input name="premium" id="premium" class="bloquetick" type="checkbox"></p></th>
+                    </tr>
+                    <tr>
+                        <th><p align="right">Tiempo de suscripcion:</p></th>
+                    </tr>
+                    <tr>
+                        <th><p align="right">1 mes <input name="1 mes" id="1m" class="bloquetick" type="checkbox"></p></th>
+                        <th><p align="left">3 meses <input name="3 meses" id="3m" class="bloquetick" type="checkbox">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6 meses <input name="6 meses" id="6m" class="bloquetick" type="checkbox"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 año <input name="1 año" id="1a" class="bloquetick" type="checkbox"></p></th>
+                    </tr>
+                    <tr>
+                        <th><p align="right">Metodo de pago:</p></th>
+                        <th>
+                            <p align="left"><select name="metodo de pago" id="mpago" class="bloqueselect"> </p>
+                                <option value="Paypal">Paypal</option>
+                                <option value="cuenta bancaria">cuenta bancaria</option>
+                            </select>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th><p align="right" >Comentario:</p></th>
+                        <th><textarea itemid="comentario" style="resize: none;" class="bloqueselect" name="comentario" id="comentario" cols="60" rows="5"></textarea></th>
+                    </tr>
+                </table>
+                <p style="margin-top: 30px"><input class="boton" id="borrar" type="reset">CANCELAR</input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="enviar" class="boton">SUSCRIBIRSE</button></p>
+            </center>
+            <img style="pointer-events: none" class="borde" src="fondo_cuestionario.png" width="750px" height="690px">
+            <img style="position:relative;left: 870px;top: -645px;z-index: 2;z-index: 1;" width="400" src="Logo_prime.png">
+        </form>
+    </body>
+</html>

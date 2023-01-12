@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>verificacion</title>
+    </head>
+    <body>
+        <p class="header"><img class="logo" src="Logo.png"></p>
+        <center><h1 style="color:#ff9000">Usted se ha registrado correctamente</h1></center>
+        <center><h2 style="color:#ff9000">compruebe su informacion:</h2></center>
+        <div style="position:relative;top: 50px;text-align: left;left: 900px;color: white;font-size: 20px;" id="results"></div>
+        <script>
+        const resultlist = document.getElementById("results")
+        new URLSearchParams(window.location.search).forEach((value,name) => {
+            resultlist.append(`${name}: ${value}`)
+            resultlist.append(document.createElement("br"))
+        })
+         </script>
+    </body>
+</html>

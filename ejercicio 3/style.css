@@ -1,0 +1,18 @@
+body{
+    background-image: url(fondo.png);
+    background-size: cover;
+    background-position: center;
+}
+
+h1{
+    color: blue;
+}
+h2{
+    color: brown;
+}
+p{
+    color: cadetblue;
+}
+dd{
+    color: blueviolet;
+}
